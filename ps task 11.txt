@@ -1,0 +1,47 @@
+
+/* transpose of a matrix*/
+
+
+rows = +prompt("Enter no of rows: ")
+cols = +prompt("Enter no of columns: ")
+matrix=[]
+for(i=1;i<=rows;i++){
+   sub=[]
+    for(j=1;j<=cols;j++){
+        console.log("Enter "+i+""+j+" element: ")
+        ele=+prompt()
+        sub.push(ele)
+    }
+    matrix.push(sub)
+}
+matrix2 = []
+for(i=1;i<=rows;i++)
+{
+    sub2=[]
+    for(j=1;j<=cols;j++)
+    {
+      a = [j][i]
+      sub2.push(a)
+    }
+    matrix2.push(sub2)
+}
+console.log(matrix2)
+
+
+
+o/p:
+
+
+Enter 11 element: 1
+Enter 12 element: 2
+Enter 13 element: 3
+Enter 21 element: 4
+Enter 22 element: 5
+Enter 23 element: 6
+Enter 31 element: 7
+Enter 32 element: 8
+Enter 33 element: 9
+[[1, 2, 3],[4, 5, 6],[7, 8, 9]]
+1 4 7 
+2 5 8 
+3 6 9 
